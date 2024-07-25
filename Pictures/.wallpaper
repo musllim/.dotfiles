@@ -1,0 +1,5 @@
+#!/bin/bash
+
+RANDOM_NUMBER=$(( $RANDOM % 7 + 1 ))
+# set wallpaper
+feh --bg-scale "$HOME/Pictures/wallpaper$RANDOM_NUMBER.jpg"
