@@ -53,6 +53,3 @@ alias reload='source ~/.bashrc'
 
 # Shortcut to clear the terminal
 alias cls='clear'
-
-# End of .bash_aliases file
-alias vim=nvim

@@ -195,4 +195,3 @@ for_window [class="^.*"] border pixel 0
 exec_always --no-startup-id ~/Pictures/.wallpaper
 # Picom
 exec_always --no-startup-id picom
-

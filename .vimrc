@@ -62,6 +62,8 @@ set expandtab
 nnoremap p p=`]<C-o>
 nnoremap P P=`]<C-o>
 
+map <C-P> :Ntree<CR>
+
 filetype plugin on
 filetype indent on
 
@@ -108,3 +110,4 @@ set smartcase       " ...unless we type a capital
 " ================ Security ==========================
 set modelines=0
 set nomodeline
+
