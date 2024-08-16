@@ -1,8 +1,10 @@
 {
   "editor.fontFamily": "'JetBrainsMono Nerd Font', 'Droid Sans Mono', 'monospace', monospace",
   "editor.fontLigatures": true,
+  "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",
   "workbench.statusBar.visible": false,
   "editor.renderWhitespace": "all",
+  "window.menuBarVisibility": "toggle",
   "workbench.activityBar.location": "hidden",
   "workbench.editor.editorActionsLocation": "hidden",
   "editor.stickyScroll.enabled": false,
@@ -11,64 +13,22 @@
   "workbench.editor.showTabs": "none",
   "workbench.colorTheme": "Tokyo Night",
   "breadcrumbs.enabled": false,
-  "window.menuBarVisibility": "toggle",
   "glassit.alpha": 220,
+  "zenMode.centerLayout": false,
+  "zenMode.hideLineNumbers": false,
   "editor.lineNumbers": "relative",
-  "vim.easymotion": true,
-  "vim.incsearch": true,
-  "vim.useSystemClipboard": true,
-  "vim.useCtrlKeys": true,
-  "vim.hlsearch": true,
-  "vim.insertModeKeyBindings": [
-    {
-      "before": [
-        "j",
-        "j"
-      ],
-      "after": [
-        "<Esc>"
-      ]
-    }
-  ],
-  "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": [
-        "<leader>",
-        "d"
-      ],
-      "after": [
-        "d",
-        "d"
-      ]
-    },
-    {
-      "before": [
-        "<C-n>"
-      ],
-      "commands": [
-        ":nohl"
-      ]
-    },
-    {
-      "before": [
-        "K"
-      ],
-      "commands": [
-        "lineBreakInsert"
-      ],
-      "silent": true
-    }
-  ],
-  "vim.leader": "<space>",
-  "vim.handleKeys": {
-    "<C-a>": false,
-    "<C-f>": false,
-    "<C-p>": false
-  },
   "extensions.experimental.affinity": {
-    "vscodevim.vim": 1
+    "asvetliakov.vscode-neovim": 1
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  }
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.minimap.enabled": false,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always"
 }

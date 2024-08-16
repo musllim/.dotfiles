@@ -7,6 +7,7 @@ alias ...='cd ../..'
 alias grep='grep --color=auto'
 alias h='history'
 alias j='jobs -l'
+alias vi="nvim"
 
 # Navigation aliases
 alias projects='cd $HOME/Documents/projects/'
@@ -37,7 +38,6 @@ alias dexec='docker exec -it'
 alias dlogs='docker logs -f'
 
 # Node.js and npm aliases
-alias npm='npm'
 alias n='npm'
 alias npmi='npm install'
 alias npmd='npm install --save-dev'

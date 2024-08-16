@@ -60,7 +60,6 @@ set expandtab
 
 " Auto indent pasted text
 nnoremap p p=`]<C-o>
-nnoremap P P=`]<C-o>
 
 map <C-P> :Ntree<CR>
 

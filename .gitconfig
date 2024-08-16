@@ -3,3 +3,4 @@
 	name = muslimuwitondanishema
 [core]
 	compression = 9
+	editor = vim
