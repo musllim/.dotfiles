@@ -45,6 +45,41 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
 
+eval "$(fzf --zsh)"
 alias ls='ls --color'
 
-eval "$(fzf --zsh)"
+
+# General aliases
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias ll='ls -alF'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias grep='grep --color=auto'
+alias h='history'
+alias j='jobs -l'
+alias vi="nvim"
+
+# Git aliases
+alias g='git'
+alias ga='git add'
+alias gc='git commit'
+alias gcane='git commit --amend --no-edit'
+alias gd='git diff'
+alias gs='git status'
+alias gb='git branch'
+alias gco='git checkout'
+alias gl='git log --oneline --decorate --color'
+alias gp='git pull'
+alias gps='git push'
+alias gpsf='git push -f'
+
+# Navigation aliases
+alias projects='cd $HOME/Documents/projects/'
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH=$BUN_INSTALL/bin:$PATH
+
+# Shortcut to clear the terminal
+alias cls='clear'
