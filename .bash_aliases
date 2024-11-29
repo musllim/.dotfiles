@@ -58,3 +58,4 @@ alias reload='source ~/.bashrc'
 
 # Shortcut to clear the terminal
 alias cls='clear'
+alias sqlc='$HOME/go/bin/sqlc'

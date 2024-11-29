@@ -21,8 +21,11 @@
         "editor.formatOnSave": true
     },
     "extensions.autoUpdate": false,
-    "workbench.editor.showTabs": "none",
+    // "workbench.editor.showTabs": "none",
     "explorer.confirmDelete": false,
     "workbench.colorTheme": "Catppuccin Mocha",
     "workbench.statusBar.visible": false,
+    "breadcrumbs.enabled": false,
+    "explorer.confirmDragAndDrop": false,
+    "glassit.alpha": 220,
 }

@@ -6,9 +6,16 @@
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
+HISTCONTROL=ignoreboth
+shopt -s histappend
+HISTSIZE=1000
+HISTFILECONTROL=2000
+shopt -s checkwinsize
+export HISTCONTROL=ignoreboth:erasedups
+
 export PATH=$HOME/.local/bin:$PATH
 
-PROMPT_COMMAND='PS1_CMD1=$(git branch --show-current 2>/dev/null)'; PS1=' \033[34;7m  \w\e[m\e[m\e[34m\033[37;7m ${PS1_CMD1:+($PS1_CMD1) }\e[m\e[37m \e[m'
+PROMPT_COMMAND='PS1_CMD1=$(git branch --show-current 2>/dev/null)'; PS1='  \W ${PS1_CMD1:+($PS1_CMD1) } \e[m'
 
 eval "$(zoxide init bash)"
 
@@ -32,4 +39,3 @@ _gt_yargs_completions()
     return 0
 }
 complete -o bashdefault -o default -F _gt_yargs_completions gt
-
