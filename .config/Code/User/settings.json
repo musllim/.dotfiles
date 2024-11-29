@@ -1,0 +1,28 @@
+{
+    "editor.fontFamily": "'JetBrainsMono Nerd Font','Droid Sans Mono', 'monospace', monospace",
+    "editor.fontLigatures": true,
+    "window.menuBarVisibility": "toggle",
+    "workbench.activityBar.location": "hidden",
+    "editor.fontSize": 18,
+    "zenMode.hideLineNumbers": false,
+    "editor.minimap.enabled": false,
+    "zenMode.centerLayout": false,
+    "zenMode.showTabs": "none",
+    "editor.scrollbar.vertical": "hidden",
+    "workbench.settings.applyToAllProfiles": [
+        "workbench.colorCustomizations"
+    ],
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "editor.renderWhitespace": "none",
+    "editor.stickyScroll.enabled": false,
+    "editor.renderControlCharacters": false,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true
+    },
+    "extensions.autoUpdate": false,
+    "workbench.editor.showTabs": "none",
+    "explorer.confirmDelete": false,
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.statusBar.visible": false,
+}
