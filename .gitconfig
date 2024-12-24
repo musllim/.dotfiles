@@ -1,0 +1,12 @@
+[user]
+	email = muslimuwitondanishema@gmail.com
+	name = muslimuwitondanishema
+[core]
+	compression = 0
+	editor = vim
+[http]
+	version = HTTP/1.1
+	postBuffer = 524288000
+	maxRequestBuffer = 524288000
+[push]
+	autoSetupRemote = true
