@@ -28,4 +28,8 @@
     "breadcrumbs.enabled": false,
     "explorer.confirmDragAndDrop": false,
     "glassit.alpha": 220,
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "editor.lineNumbers": "relative"
 }
