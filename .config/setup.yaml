@@ -1,0 +1,56 @@
+- hosts: 127.0.0.1
+  connection: local
+  tasks:
+    - name: update repository cache
+      become: yes
+      community.general.pacman:
+        update_cache: yes
+
+    - name: install packages with yay
+      community.general.pacman:
+        name:
+          - lazydocker
+          - visual-studio-code-bin
+          - google-chrome
+        state: present
+        executable: yay
+        # extra_args: --builddir /var/cache/yay
+
+    - name: install packages with pacman
+      become: yes
+      community.general.pacman:
+        name:
+          - git
+          - neovim
+          - stow
+          - fzf
+          - dunst
+          - docker
+          - docker-compose
+          - kitty
+          - hyprland
+          - hypridle
+          - hyprlock
+          - xdg-desktop-portal-hyprland
+          - btop
+          - zoxide
+          - ttf-font-awesome
+          - ttf-jetbrains-mono-nerd
+          - noto-fonts
+          - noto-fonts-emoji
+          - wofi
+          - waybar
+          - nodejs-lts-hydrogen
+          - wl-clipboard
+          - thunar
+        state: present
+
+    # - name: Clone dotfiles
+    #   ansible.builtin.shell: git clone https://github.com/musllim/.dotfiles.git
+    #   args:
+    #     chdir: ~/
+
+    # - name: stow dotfiles
+    #   ansible.builtin.shell: stow .
+    #   args:
+    #     chdir: ~/.dotfiles
