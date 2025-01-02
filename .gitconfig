@@ -3,7 +3,7 @@
 	name = muslimuwitondanishema
 [core]
 	compression = 0
-	editor = vim
+	editor = nvim
 [http]
 	version = HTTP/1.1
 	postBuffer = 524288000

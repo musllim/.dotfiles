@@ -20,16 +20,22 @@
         "editor.defaultFormatter": "ms-python.black-formatter",
         "editor.formatOnSave": true
     },
+    "[javascript, typescriptreact, typescript]": {
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.formatOnSave": true
+    },
     "extensions.autoUpdate": false,
     // "workbench.editor.showTabs": "none",
     "explorer.confirmDelete": false,
-    "workbench.colorTheme": "Catppuccin Mocha",
-    "workbench.statusBar.visible": false,
     "breadcrumbs.enabled": false,
     "explorer.confirmDragAndDrop": false,
     "glassit.alpha": 220,
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
     },
-    "editor.lineNumbers": "relative"
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "editor.formatOnSave": true,
+    "workbench.statusBar.visible": false,
+    "editor.defaultFormatter": "biomejs.biome",
+    "javascript.updateImportsOnFileMove.enabled": "always"
 }

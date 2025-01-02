@@ -2,9 +2,7 @@
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias ll='ls -alF'
-alias cd='z'
-alias dog='/usr/bin/cat'
-alias cat='bat --color=always'
+alias bat='bat --color=always'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias grep='grep --color=auto'
@@ -13,6 +11,7 @@ alias j='jobs -l'
 alias v='vim $(fzf --preview="bat --color=always {}")'
 alias vim="nvim"
 alias config='/usr/bin/git --git-dir=$HOME/Documents/projects/dotfiles/ --work-tree=$HOME'
+alias e='eval $(h | sed "s/^[ ]*[0-9]\+[ ]*//" | fzf --height=10 --border --color=label:italic:black)'
 
 # Navigation aliases
 alias projects='cd $HOME/Documents/projects/'
